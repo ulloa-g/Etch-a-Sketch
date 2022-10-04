@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="./index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./media/favicon/fav1-96.png">
+    <link rel="stylesheet" href="style.css">
     <title>Etch-a-Sketch</title>
 </head>
 <body>
@@ -17,8 +17,10 @@
         <ul>
             <li><button class="btn default">Default</button></li>
             <li><button class="btn rainbow">Rainbow</button></li>
-            <li><button class="btn pick">Pick your color</button></li>
-            <li><button class="btn erase">Erase</button></li>
+            <li><button class="btn pick" id="btnPicker">Choose color <span>
+                <input type="color" name="picker" id="picker" value="#403D39" colorpick-eyedropper-active="false">
+            </span></li></button>
+            <li><button class="btn erase">Eraser</button></li>
             <li><button class="btn size">Size</button></li>
         </ul>
     </nav>

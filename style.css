@@ -23,10 +23,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+} */
 body {
 	line-height: 1;
 }
@@ -61,8 +61,26 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0.7rem;
     margin-bottom: 3rem;
+}
+#picker {
+    appearance: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+#btnPicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+    gap: 10px;
+    padding: 0.8rem;
 }
 .btn {
     font-size: 1rem;

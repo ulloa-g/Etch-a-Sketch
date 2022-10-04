@@ -15,12 +15,18 @@ function createGrid(size) {
         color = defaultColor;
         btnRainbow.addEventListener('click', ()=> {
             div.addEventListener('mouseover', ()=> {
-                div.style.backgroundColor = 'red';
+                const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                div.style.backgroundColor = "#" + randomColor;
             })
         });
         btnDefault.addEventListener('click', ()=> {
             div.addEventListener('mouseover', ()=> {
                 div.style.backgroundColor = '#252422';
+            })
+        });
+        btnErase.addEventListener('click', ()=> {
+            div.addEventListener('mouseover', ()=> {
+                div.style.backgroundColor = '#FFFCF2';
             })
         });
         div.addEventListener('mouseover', ()=> {

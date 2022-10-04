@@ -88,7 +88,7 @@ main {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(16, auto);
+    /* grid-template-columns: repeat(16, auto); this one is going to be created with the .js */
     box-shadow: 0 0 6px #403D39;
     width: 20rem;
     height: 20rem;

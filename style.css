@@ -23,10 +23,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-} */
+}
 body {
 	line-height: 1;
 }
@@ -107,12 +107,12 @@ main {
 .container {
     display: grid;
     /* grid-template-columns: repeat(16, auto); this one is going to be created with the .js */
-    box-shadow: 0 0 6px #403D39;
+    box-shadow: 0 0 2rem #403D39;
     width: 20rem;
     height: 20rem;
 }
 .container > div {
-    border: 0.5px solid rgba(0, 0, 0, 0.044);
+    border: 0.3px solid rgba(0, 0, 0, 0.10);
 }
 /* ----------footer---------- */
 footer {

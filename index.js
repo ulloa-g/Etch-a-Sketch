@@ -5,6 +5,7 @@ const btnPickColor = document.querySelector('.pick');
 const btnErase = document.querySelector('.erase');
 const btnSize = document.querySelector('.size');
 const divItem = document.querySelector('.container > div');
+const picker = document.getElementById('picker');
 const defaultSize = 16;
 const defaultColor = '#252422';
 function createGrid(size) {
@@ -29,6 +30,13 @@ function createGrid(size) {
                 div.style.backgroundColor = '#FFFCF2';
             })
         });
+        picker.addEventListener('mouseout', ()=> {
+            let x = document.getElementById('picker').value;
+            console.log(x);
+            div.addEventListener('mouseover', ()=> {
+                div.style.backgroundColor = x;
+            })
+        })
         div.addEventListener('mouseover', ()=> {
             div.style.backgroundColor = '#252422';
         })

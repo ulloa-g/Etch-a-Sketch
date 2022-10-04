@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* working whit this palette: https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28 */
+body {
+    background-color: #FFFCF2;
+}
+.main-title {
+    padding: 2rem 3rem;
+    margin-bottom: 0;
+    color: #403D39;
+    font-size: 4rem;
+    text-shadow: 0 0 7px #EB5E28;
+    text-align: center;
+}
+.options > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.btn {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFCF2;
+    box-shadow: 0 0 6px #403D39;
+    transition: 700ms;
+}
+.btn:hover {
+    background-color: #EB5E28;
+}
+.btn:active {
+    color: #CCC5B9;
+}
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    box-shadow: 0 0 20px #EB5E28;
+    border-radius: 20px;
+    width: 20rem;
+    height: 20rem;
+
+}
+/* footer */
+footer {
+    /* this is how you fixed the footer always at the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.find-me {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCC5B9;
+    color: #252422;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.find-me > a > img {
+    transition: all 400ms ease-in-out;
+}
+.find-me > a > img:hover {
+    transform: rotate(360deg);
+}
